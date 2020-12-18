@@ -23,4 +23,15 @@ class M_Barang extends CI_Model {
         $this->db->where($where);
         $this->db->delete($table);
     }
+
+    public function find($id) {
+        // Querry u mencari record data berdasarkan id
+        $result = $this->db->where('id_brg', $id)->limit(1)->get('tb_barang');
+
+        if ($result->num_rows() > 0) {
+            return $result->row();
+        } else {
+            return array();
+        }
+    }
 }
