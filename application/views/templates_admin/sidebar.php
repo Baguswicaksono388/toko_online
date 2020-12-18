@@ -33,7 +33,7 @@
 
 			<!-- Nav Item - Tables -->
 			<li class="nav-item">
-				<a class="nav-link" href="/admin/Invoices">
+				<a class="nav-link" href="/admin/Invoice">
 					<i class="fas fa-fw fa-file-invoice"></i>
 					<span>Invoices</span></a>
 			</li>
