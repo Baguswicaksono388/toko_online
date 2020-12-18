@@ -8,10 +8,10 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="<?='assets/img/slider1.jpg' ?>" class="d-block w-100" alt="...">
+				<img src="<?php echo base_url('assets/img/slider1.jpg'); ?>" class="d-block w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-				<img src="<?='assets/img/slider2.jpg' ?>" class="d-block w-100" alt="...">
+				<img src="<?php echo base_url('assets/img/slider2.jpg') ?>" class="d-block w-100" alt="...">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -34,7 +34,7 @@
 				<h5 class="card-title mb-1"><?= $brg->nama_brg ?></h5>
                 <small><?= $brg->keterangan ?></small><br>
 				<span class="badge bg-success mb-3">Rp. <?= $brg->harga ?></span>
-				<a href="#" class="btn btn-sm btn-primary">Tambah Ke Keranjang</a>
+				<?php echo anchor('Dashboard/tambah_ke_keranjang/'. $brg->id_brg, '<div class="btn btn-primary btn-sm">Tambah ke Keranjang</div>') ?>
 				<a href="#" class="btn btn-sm btn-success">Detail</a>
 			</div>
 		</div>
