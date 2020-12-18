@@ -139,7 +139,7 @@
 									<?php 
 										$keranjang = 'Keranjang Belanja: '. $this->cart->total_items(). ' items'
 									?>
-									<?= $keranjang; ?>
+									<?php echo anchor('Dashboard/detail_keranjang', $keranjang);  ?>
 								</li>
 							</ul>
 						</div>
