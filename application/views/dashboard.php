@@ -33,7 +33,7 @@
 			<div class="card-body">
 				<h5 class="card-title mb-1"><?= $brg->nama_brg ?></h5>
                 <small><?= $brg->keterangan ?></small><br>
-				<span class="badge bg-success mb-3">Rp. <?= $brg->harga ?></span>
+				<span class="badge bg-success mb-3">Rp. <?= number_format($brg->harga, 0,',','.') ?></span>
 				<?php echo anchor('Dashboard/tambah_ke_keranjang/'. $brg->id_brg, '<div class="btn btn-primary btn-sm">Tambah ke Keranjang</div>') ?>
 				<a href="#" class="btn btn-sm btn-success">Detail</a>
 			</div>
